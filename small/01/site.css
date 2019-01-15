@@ -43,15 +43,15 @@
 }
 
 .section-3 > .flex-item {
-  height: 50%;
+  flex-basis: 50%;
 }
 
 .section-3 > .flex-item:nth-child(1) {
-  height: 100%;
+  flex-basis: 100%;
 }
 
 .section-3 > .flex-item:nth-child(6) {
-  height: 100%;
+  flex-basis: 100%;
 }
 
 /* Add styles for section-4 */
@@ -73,7 +73,7 @@
 }
 
 .section-5 > .space-invader:nth-child(1) {
-  height: 100%;
+  flex-basis: 100%;
   background-position: center;
 }
 
@@ -126,5 +126,5 @@
 }
 
 .section-8 > .flex-item:nth-child(1) {
-  height: 100%;
+  flex-basis: 100%;
 }
