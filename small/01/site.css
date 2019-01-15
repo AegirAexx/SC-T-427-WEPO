@@ -1,58 +1,57 @@
 /* EDIT BELOW THIS LINE */
 /* aegir15 @ Reykjavik University / SC-T-427-WEPO / Small Assignment 1
 
+
 /* Add styles for section-1 */
 .section-1 {
   height: 200px;
 }
 
-.section-1 > div {
-  display: flex;
+.section-1 div {
   justify-content: center;
   align-items: center;
-  flex-grow: 2;
+  flex: 1 1 auto;
 }
 
-.section-1 > .flex-item:nth-child(2) {
-  flex-grow: 1;
+.section-1 .flex-item:nth-child(odd) {
+  flex: 2 1 auto;
 }
 
-.section-1 > .flex-item:nth-child(4) {
-  flex-grow: 1;
-}
 
 /* Add styles for section-2 */
 .section-2 {
   flex-flow: column-reverse;
 }
 
-.section-2 > .flex-item:nth-child(1) {
-  flex-grow: 1;
+.section-2 .flex-item:first-child {
+  flex: 1 1 auto;
   width: 50%;
 }
 
-.section-2 > .flex-item:nth-child(5) {
-  flex-grow: 1;
+.section-2 .flex-item:last-child {
+  flex: 1 1 auto;
   width: 50%;
   align-self: flex-end;
 }
+
 
 /* Add styles for section-3 */
 .section-3 {
   flex-flow: column wrap;
 }
 
-.section-3 > .flex-item {
-  flex-basis: 50%;
+.section-3 .flex-item {
+  flex: 0 1 50%;
 }
 
-.section-3 > .flex-item:nth-child(1) {
-  flex-basis: 100%;
+.section-3 .flex-item:first-child {
+  flex: 0 1 100%;
 }
 
-.section-3 > .flex-item:nth-child(6) {
-  flex-basis: 100%;
+.section-3 .flex-item:last-child {
+  flex: 0 1 100%;
 }
+
 
 /* Add styles for section-4 */
 .section-4 {
@@ -60,10 +59,11 @@
   align-items: center;
 }
 
-.section-4 > div {
+.section-4 div {
   height: 60px;
   width: 100px;
 }
+
 
 /* Add styles for section-5 */
 .section-5 {
@@ -72,10 +72,11 @@
   align-items: center;
 }
 
-.section-5 > .space-invader:nth-child(1) {
-  flex-basis: 100%;
+.section-5 .space-invader:first-child {
+  flex: 0 1 100%;
   background-position: center;
 }
+
 
 /* Add styles for section-6 */
 .section-6 {
@@ -84,47 +85,49 @@
   justify-content: space-around;
 }
 
+
 /* Add styles for section-7 */
 .section-7 {
   flex-flow: column wrap-reverse;
   justify-content: space-around;
 }
 
-.section-7 > div {
+.section-7 div {
   transform: scale(1.25, 1.25);
 }
 
-.section-7 > .carebear-blue {
+.section-7 .carebear-blue {
   order: 3;
 }
 
-.section-7 > .carebear-green {
+.section-7 .carebear-green {
   order: 2;
 }
 
-.section-7 > .carebear-red {
+.section-7 .carebear-red {
   order: 1;
 }
 
-.section-7 > .carebear-pink {
+.section-7 .carebear-pink {
   transform: scale(1, 1);
   align-self: flex-end;
   order: 5;
 }
 
-.section-7 > .carebear-yellow {
+.section-7 .carebear-yellow {
   order: 4;
 }
+
 
 /* Add styles for section-8 */
 .section-8 {
   flex-flow: column-reverse wrap;
 }
 
-.section-8 > .flex-item {
-  flex-grow: 1;
+.section-8 .flex-item {
+  flex: 1 1 auto;
 }
 
-.section-8 > .flex-item:nth-child(1) {
-  flex-basis: 100%;
+.section-8 .flex-item:first-child {
+  flex: 0 1 100%;
 }
