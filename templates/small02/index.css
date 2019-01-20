@@ -1,0 +1,49 @@
+/* Here below you should make your changes */
+@keyframes static {
+    /* Insert your changes */
+}
+
+@keyframes level-1 {
+    /* Insert your changes */
+}
+
+@keyframes move-cartridge {
+    /* Insert your changes */
+}
+
+.intro {
+    /* Insert your changes */
+}
+
+.level-1 {
+    /* Insert your changes */
+}
+
+.static {
+    /* Insert your changes */
+}
+
+.move-cartridge {
+    /* Insert your changes */
+}
+
+#television {
+    height: 350px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#nes-console {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#nes-cartridge {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 300px;
+    bottom: 0px;
+}
