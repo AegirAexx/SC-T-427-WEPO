@@ -1,56 +1,110 @@
 /* Here below you should make your changes */
 @keyframes static {
-  /* Insert your changes */
+  from {
+    background-image: url(resources/tv.png),
+      linear-gradient(
+        -90deg,
+        rgba(0, 1, 0, 1),
+        rgba(0, 1, 0, 1) 14.2%,
+        rgba(17, 23, 159, 1) 14.2%,
+        rgba(17, 23, 159, 1) 28.4%,
+        rgba(154, 33, 28, 1) 28.4%,
+        rgba(154, 33, 28, 1) 42.6%,
+        rgba(156, 44, 165, 1) 42.6%,
+        rgba(156, 44, 165, 1) 56.8%,
+        rgba(86, 175, 62, 1) 56.8%,
+        rgba(86, 175, 62, 1) 71%,
+        rgba(85, 178, 180, 1) 71%,
+        rgba(85, 178, 180, 1) 85.2%,
+        rgba(184, 181, 69, 1) 85.2%,
+        rgba(184, 181, 69, 1) 100%
+      );
+    background-size: cover, 60% 72%;
+    background-position: center, 35% 35%;
+    background-repeat: no-repeat;
+  }
+
+  to {
+    background-image: url(resources/tv.png),
+      linear-gradient(
+        90deg,
+        rgba(0, 1, 0, 1),
+        rgba(0, 1, 0, 1) 14.2%,
+        rgba(17, 23, 159, 1) 14.2%,
+        rgba(17, 23, 159, 1) 28.4%,
+        rgba(154, 33, 28, 1) 28.4%,
+        rgba(154, 33, 28, 1) 42.6%,
+        rgba(156, 44, 165, 1) 42.6%,
+        rgba(156, 44, 165, 1) 56.8%,
+        rgba(86, 175, 62, 1) 56.8%,
+        rgba(86, 175, 62, 1) 71%,
+        rgba(85, 178, 180, 1) 71%,
+        rgba(85, 178, 180, 1) 85.2%,
+        rgba(184, 181, 69, 1) 85.2%,
+        rgba(184, 181, 69, 1) 100%
+      );
+    background-size: cover, 60% 72%;
+    background-position: center, 35% 35%;
+    background-repeat: no-repeat;
+  }
 }
 
 @keyframes level-1 {
-  /* Insert your changes */
+  0% {
+    background-position: center, -1.5% 38%;
+  }
+  100% {
+    background-position: center, 103% 38%;
+  }
 }
 
 @keyframes move-cartridge {
-  /* Insert your changes */
+  0% {
+    bottom: 0px;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 400px;
+    left: 460px;
+    opacity: 0;
+  }
 }
 
 .intro {
-  /* Insert your changes */
+  background-image: url(resources/tv.png), url(resources/intro.png);
+  background-size: cover, 340px 250px;
+  background-position: center, 23% 40%;
+  background-repeat: no-repeat;
 }
 
 .level-1 {
-  /* Insert your changes */
+  background-image: url(resources/tv.png), url(resources/stage1.png);
+  animation: level-1 linear;
+  animation-duration: 20000ms;
+  animation-fill-mode: forwards;
+  background-size: cover, auto;
+  background-repeat: no-repeat;
 }
 
 .static {
+  animation-name: static;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
 }
 
 .move-cartridge {
-  /* Insert your changes */
+  animation-name: move-cartridge;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 #television {
   height: 350px;
   width: 500px;
   margin: 0 auto;
-  background-image: url(resources/tv.png),
-    linear-gradient(
-      -90deg,
-      rgba(0, 1, 0, 1),
-      rgba(0, 1, 0, 1) 14.2%,
-      rgba(17, 23, 159, 1) 14.2%,
-      rgba(17, 23, 159, 1) 28.4%,
-      rgba(154, 33, 28, 1) 28.4%,
-      rgba(154, 33, 28, 1) 42.6%,
-      rgba(156, 44, 165, 1) 42.6%,
-      rgba(156, 44, 165, 1) 56.8%,
-      rgba(86, 175, 62, 1) 56.8%,
-      rgba(86, 175, 62, 1) 71%,
-      rgba(85, 178, 180, 1) 71%,
-      rgba(85, 178, 180, 1) 85.2%,
-      rgba(184, 181, 69, 1) 85.2%,
-      rgba(184, 181, 69, 1) 100%
-    );
-  background-size: cover, 60% 70%;
-  background-position: center, 35% 35%;
-  background-repeat: no-repeat, no-repeat;
 }
 
 #nes-console {
@@ -70,4 +124,5 @@
   bottom: 0px;
   background-image: url(resources/contra-cartridge.png);
   background-size: cover;
+  transform: perspective(100px) rotateX(45deg) rotateZ(30deg);
 }
