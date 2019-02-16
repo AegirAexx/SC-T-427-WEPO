@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drawio - Large Assignment 2 - SC-T-427-WEPO</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center bg-lightest-blue h-100">
+    <div class="flex-column items-center justify-center w-75">
+        <div class="flex justify-between">
+            <h1 class="f1 lh-solid">DRAWIO APP</h1>
+            <div class="flex items-center ph3">
+                <button id="clear" class="tool-icon mh2 shadow-5">CLEAR</button>
+                <div id="rect" class="tool-icon mh2 w2 h2 cover"></div>
+                <div id="circle" class="tool-icon mh2 w2 h2 cover o-30"></div>
+                <div id="line" class="tool-icon mh2 w2 h2 cover o-30"></div>
+                <div id="draw" class="tool-icon ml2 w2 h2 cover o-30 grow"></div>
+            </div>
+        </div>
+        <canvas id="mainCanvas" class="ba bw2 bg-washed-blue w-100 h-100">Your browser does not support the HTML5 canvas tag.</canvas>
+    </div>
+    <script src="shapes.js" charset="UTF-8"></script>
+    <script src="drawio.js" charset="UTF-8"></script>
+</body>
+</html>

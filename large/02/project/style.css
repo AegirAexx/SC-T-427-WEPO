@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tool-icon:hover {
+    cursor: pointer;
+}
+
+#circle {
+    background-image: url(./images/circle.png);
+}
+
+#line {
+    background-image: url(images/line.png);
+}
+
+#rect {
+    background-image: url(images/rectangle.png);
+}
+
+#draw {
+    background-image: url(images/draw.png);
+}
